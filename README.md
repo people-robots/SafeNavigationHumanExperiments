@@ -43,6 +43,10 @@ There are some (but not many) unit tests available in the `testcode` module. The
 python3 -m testcode.geometry_test
 ```
 
+### DeepMotion Training
+
+To train the neural network(s) for the DeepMotion navigation algorithm (`DeepPredNavAlgo` class), go into the `human_action` directory and run `python3 train_C.py action data/training_human_data.json`. The networks will be saved in the `dnns` folder. The `DeepPredNavAlgo` class takes a `net_load_file` parameter that specifies the file to load the network from.
+
 ## Contributing
 
 Use tabs, never spaces. Spaces break the Cython compilation. Also, use Unix line endings.
